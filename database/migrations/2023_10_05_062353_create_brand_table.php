@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string("slug");
             $table->unsignedInteger('sort_order');
             $table->string("description");
-
+            $table->string("image")->nullable();
             $table->unsignedInteger('created_by');
             $table->unsignedInteger('update_by');
             $table->timestamps();

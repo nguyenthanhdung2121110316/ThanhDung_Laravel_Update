@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string("image");
             $table->string("link")->nullable();
             $table->string("position");
+            $table->string("description");
 
             $table->unsignedInteger('created_by');
             $table->unsignedInteger('update_by')->nullable();
